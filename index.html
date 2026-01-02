@@ -24,6 +24,17 @@
             margin: 0;
             color: #9ca3af;
         }
+        .logo-wrap {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .logo-img {
+            max-width: 120px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+        }
         main {
             max-width: 960px;
             margin: 0 auto;
@@ -103,6 +114,12 @@
 </head>
 <body>
 <header>
+    <div class="logo-wrap">
+        <!-- logo_negative.jpg musi być w tym samym katalogu co index.html -->
+        <img src="logo_negative.jpg"
+             alt="Negative DNG Converter logo"
+             class="logo-img">
+    </div>
     <h1>Negative DNG Converter</h1>
     <p>Cyfrowe wywoływanie negatywów – szybka konwersja DNG &rarr; JPG/TIFF</p>
 </header>
@@ -114,11 +131,18 @@
             Otwierasz skan DNG, korygujesz maskę, ekspozycję i kolory, eksportujesz do JPG lub 16‑bit TIFF.
         </p>
         <div class="hero-btns">
-            <!-- PODMIEN TEN LINK NA SWOJ PRODUKT (np. Gumroad / Payhip) -->
-            <a class="btn-primary" href="https://twoj-link-do-produktu.example" target="_blank" rel="noopener">
-                Kup teraz / Download
+            <!-- PODMIEN NA SWÓJ LINK DO RELEASE (wersja trial z watermarkiem) -->
+            <a class="btn-secondary"
+               href="https://github.com/Oxygenum/Negative-DNG-Converter/releases/download/v1.0.0-trial/NegativeDNG_Trial.exe">
+                Pobierz wersję testową (free)
             </a>
-            <a class="btn-secondary" href="#features">Zobacz funkcje</a>
+
+            <!-- PODMIEN NA LINK DO PRODUKTU (np. Gumroad / Payhip) -->
+            <a class="btn-primary"
+               href="https://twoj-link-do-pelnej-wersji.example"
+               target="_blank" rel="noopener">
+                Kup pełną wersję (bez znaku wodnego)
+            </a>
         </div>
     </div>
 
@@ -133,36 +157,49 @@
                     <li>Auto balans bieli oraz opcjonalne auto‑crop.</li>
                     <li>Regulacja kolorów CMY i wyostrzanie (kilka poziomów).</li>
                     <li>Wsparcie prostego HDR z trzech ekspozycji (‑2 / 0 / +2 EV).</li>
-                    <li>Partially transparent watermark na eksportach JPG/TIFF (do ochrony preview).</li>
+                    <li>Wersja testowa: półprzezroczysty watermark na eksportach JPG/TIFF.</li>
                 </ul>
             </div>
             <div>
                 <h3>W skrócie</h3>
                 <p>
-                    Program powstał z myślą o wywoływaniu skanów z aparatów cyfrowych (raw &rarr; DNG) fotografujących negatywy 
-                    na lightboxie. Sprawdza się przy seryjnej obróbce rolek na Windows.
+                    Program powstał z myślą o wywoływaniu skanów z aparatów cyfrowych (raw &rarr; DNG) fotografujących
+                    negatywy na lightboxie. Sprawdza się przy seryjnej obróbce rolek na Windows.
                 </p>
                 <p>
-                    Interfejs jest w języku polskim, a ustawienia można zapisywać jako presety (JSON) 
+                    Interfejs jest w języku polskim, a ustawienia można zapisywać jako presety (JSON)
                     i odtwarzać w kolejnych sesjach.
                 </p>
             </div>
         </div>
     </section>
 
-    <section id="buy">
-        <h2>Zakup i pobieranie</h2>
+    <section id="download">
+        <h2>Pobierz i zakup</h2>
+        <h3>Wersja testowa (free)</h3>
         <ul>
-            <li>Płatności i wysyłkę pliku obsługuje zewnętrzna platforma (np. Gumroad lub Payhip).</li>
-            <li>Po zakupie otrzymujesz link do pobrania instalatora / archiwum z programem.</li>
-            <li>Licencja: do użytku osobistego/komercyjnego (doprecyzuj w opisie produktu).</li>
+            <li>Pełna funkcjonalność programu.</li>
+            <li>Każdy eksport JPG/TIFF zawiera znak wodny z nazwą programu.</li>
+            <li>Do testów jakości skanów i workflow.</li>
         </ul>
         <p>
-            Aby kupić program, kliknij przycisk poniżej (przeniesie Cię na bezpieczną stronę z płatnością):
+            <a class="btn-secondary"
+               href="https://github.com/Oxygenum/Negative-DNG-Converter/releases/download/v1.0.0-trial/NegativeDNG_Trial.exe">
+                Pobierz wersję testową (free)
+            </a>
         </p>
+
+        <h3>Pełna wersja (bez watermarka)</h3>
+        <ul>
+            <li>Brak znaku wodnego na plikach wyjściowych.</li>
+            <li>Możliwość użycia w pracy komercyjnej (zgodnie z licencją).</li>
+            <li>Dalsze aktualizacje i poprawki błędów.</li>
+        </ul>
         <p>
-            <a class="btn-primary" href="https://twoj-link-do-produktu.example" target="_blank" rel="noopener">
-                Kup Negative DNG Converter
+            <a class="btn-primary"
+               href="https://twoj-link-do-pelnej-wersji.example"
+               target="_blank" rel="noopener">
+                Kup pełną wersję
             </a>
         </p>
     </section>
@@ -172,7 +209,7 @@
         <ul>
             <li>System: Windows 10 / 11 (64‑bit).</li>
             <li>RAM: min. 8 GB; zalecane 16 GB dla dużych DNG.</li>
-            <li>Wymagane sterowniki do karty graficznej oraz biblioteki MSVC / .NET (jeśli instalator o to poprosi).</li>
+            <li>Wymagane aktualne sterowniki GPU oraz biblioteki MSVC / .NET (jeśli instalator o to poprosi).</li>
         </ul>
     </section>
 
@@ -181,8 +218,8 @@
         <h3>Czy program działa offline?</h3>
         <p>Tak. Po instalacji cała obróbka odbywa się lokalnie na Twoim komputerze.</p>
 
-        <h3>Czy mogę używać go komercyjnie?</h3>
-        <p>Tak, możesz używać programu do obróbki zdjęć dla klientów – upewnij się tylko, że akceptujesz warunki licencji.</p>
+        <h3>Czym różni się wersja testowa od pełnej?</h3>
+        <p>Wersja testowa dodaje znak wodny na eksportach JPG/TIFF. Pełna wersja nie dodaje watermarka.</p>
 
         <h3>Jaki jest format wejściowy?</h3>
         <p>Program oczekuje plików DNG z negatywem (np. z aparatu cyfrowego fotografującego negatyw na lightboxie).</p>
@@ -195,11 +232,14 @@
             into positive JPG / 16‑bit TIFF files with mask removal, exposure and color correction.
         </p>
         <p>
-            To purchase and download the app, use the button below:
-        </p>
-        <p>
-            <a class="btn-primary" href="https://twoj-link-do-produktu.example" target="_blank" rel="noopener">
-                Buy / Download
+            <a class="btn-secondary"
+               href="https://github.com/Oxygenum/Negative-DNG-Converter/releases/download/v1.0.0-trial/NegativeDNG_Trial.exe">
+                Download trial (with watermark)
+            </a>
+            <a class="btn-primary"
+               href="https://twoj-link-do-pelnej-wersji.example"
+               target="_blank" rel="noopener">
+                Buy full version
             </a>
         </p>
     </section>
