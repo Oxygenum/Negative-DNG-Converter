@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Negative DNG Converter – cyfrowe wywoływanie negatywów</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Negative DNG Converter – szybka konwersja negatywów DNG do JPG/TIFF z automatycznym usuwaniem maski i korekcją kolorów.">
+    <style>
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: #0f172a;
+            color: #e5e7eb;
+        }
+        header {
+            padding: 40px 20px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0 0 10px;
+            font-size: 2.4rem;
+        }
+        header p {
+            margin: 0;
+            color: #9ca3af;
+        }
+        main {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 10px 20px 40px;
+        }
+        .hero {
+            text-align: center;
+            padding: 20px 0 30px;
+        }
+        .hero-btns {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        a.btn-primary,
+        a.btn-secondary {
+            display: inline-block;
+            padding: 10px 22px;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        a.btn-primary {
+            background: #22c55e;
+            color: #022c22;
+        }
+        a.btn-primary:hover {
+            background: #16a34a;
+        }
+        a.btn-secondary {
+            border: 1px solid #64748b;
+            color: #e5e7eb;
+        }
+        a.btn-secondary:hover {
+            background: #1e293b;
+        }
+        section {
+            margin-bottom: 32px;
+            background: #020617;
+            border-radius: 16px;
+            padding: 18px 20px 20px;
+            border: 1px solid #1e293b;
+        }
+        section h2 {
+            margin-top: 0;
+            font-size: 1.4rem;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        .two-col {
+            display: grid;
+            grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+            gap: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.8rem;
+            color: #6b7280;
+        }
+        code {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        }
+        @media (max-width: 768px) {
+            .two-col {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Negative DNG Converter</h1>
+    <p>Cyfrowe wywoływanie negatywów – szybka konwersja DNG &rarr; JPG/TIFF</p>
+</header>
+
+<main>
+    <div class="hero">
+        <p>
+            Desktopowa aplikacja dla fotografów analogowych. <br>
+            Otwierasz skan DNG, korygujesz maskę, ekspozycję i kolory, eksportujesz do JPG lub 16‑bit TIFF.
+        </p>
+        <div class="hero-btns">
+            <!-- PODMIEN TEN LINK NA SWOJ PRODUKT (np. Gumroad / Payhip) -->
+            <a class="btn-primary" href="https://twoj-link-do-produktu.example" target="_blank" rel="noopener">
+                Kup teraz / Download
+            </a>
+            <a class="btn-secondary" href="#features">Zobacz funkcje</a>
+        </div>
+    </div>
+
+    <section id="features">
+        <h2>Najważniejsze funkcje</h2>
+        <div class="two-col">
+            <div>
+                <ul>
+                    <li>Konwersja negatywów DNG do JPG i 16‑bit TIFF.</li>
+                    <li>Automatyczne usuwanie pomarańczowej maski filmu.</li>
+                    <li>Regulacja ekspozycji, kontrastu, gęstości i nasycenia.</li>
+                    <li>Auto balans bieli oraz opcjonalne auto‑crop.</li>
+                    <li>Regulacja kolorów CMY i wyostrzanie (kilka poziomów).</li>
+                    <li>Wsparcie prostego HDR z trzech ekspozycji (‑2 / 0 / +2 EV).</li>
+                    <li>Partially transparent watermark na eksportach JPG/TIFF (do ochrony preview).</li>
+                </ul>
+            </div>
+            <div>
+                <h3>W skrócie</h3>
+                <p>
+                    Program powstał z myślą o wywoływaniu skanów z aparatów cyfrowych (raw &rarr; DNG) fotografujących negatywy 
+                    na lightboxie. Sprawdza się przy seryjnej obróbce rolek na Windows.
+                </p>
+                <p>
+                    Interfejs jest w języku polskim, a ustawienia można zapisywać jako presety (JSON) 
+                    i odtwarzać w kolejnych sesjach.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="buy">
+        <h2>Zakup i pobieranie</h2>
+        <ul>
+            <li>Płatności i wysyłkę pliku obsługuje zewnętrzna platforma (np. Gumroad lub Payhip).</li>
+            <li>Po zakupie otrzymujesz link do pobrania instalatora / archiwum z programem.</li>
+            <li>Licencja: do użytku osobistego/komercyjnego (doprecyzuj w opisie produktu).</li>
+        </ul>
+        <p>
+            Aby kupić program, kliknij przycisk poniżej (przeniesie Cię na bezpieczną stronę z płatnością):
+        </p>
+        <p>
+            <a class="btn-primary" href="https://twoj-link-do-produktu.example" target="_blank" rel="noopener">
+                Kup Negative DNG Converter
+            </a>
+        </p>
+    </section>
+
+    <section id="requirements">
+        <h2>Wymagania systemowe</h2>
+        <ul>
+            <li>System: Windows 10 / 11 (64‑bit).</li>
+            <li>RAM: min. 8 GB; zalecane 16 GB dla dużych DNG.</li>
+            <li>Wymagane sterowniki do karty graficznej oraz biblioteki MSVC / .NET (jeśli instalator o to poprosi).</li>
+        </ul>
+    </section>
+
+    <section id="faq">
+        <h2>FAQ</h2>
+        <h3>Czy program działa offline?</h3>
+        <p>Tak. Po instalacji cała obróbka odbywa się lokalnie na Twoim komputerze.</p>
+
+        <h3>Czy mogę używać go komercyjnie?</h3>
+        <p>Tak, możesz używać programu do obróbki zdjęć dla klientów – upewnij się tylko, że akceptujesz warunki licencji.</p>
+
+        <h3>Jaki jest format wejściowy?</h3>
+        <p>Program oczekuje plików DNG z negatywem (np. z aparatu cyfrowego fotografującego negatyw na lightboxie).</p>
+    </section>
+
+    <section id="en">
+        <h2>English (short)</h2>
+        <p>
+            <strong>Negative DNG Converter</strong> is a Windows desktop app for converting film negative DNG scans
+            into positive JPG / 16‑bit TIFF files with mask removal, exposure and color correction.
+        </p>
+        <p>
+            To purchase and download the app, use the button below:
+        </p>
+        <p>
+            <a class="btn-primary" href="https://twoj-link-do-produktu.example" target="_blank" rel="noopener">
+                Buy / Download
+            </a>
+        </p>
+    </section>
+</main>
+
+<footer>
+    &copy; 2026 Negative DNG Converter &ndash; all rights reserved.
+</footer>
+</body>
+</html>
