@@ -151,25 +151,30 @@
         <div class="two-col">
             <div>
                 <ul>
-                    <li>Konwersja negatywów DNG do JPG i 16‑bit TIFF.</li>
-                    <li>Automatyczne usuwanie pomarańczowej maski filmu.</li>
-                    <li>Regulacja ekspozycji, kontrastu, gęstości i nasycenia.</li>
-                    <li>Auto balans bieli oraz opcjonalne auto‑crop.</li>
-                    <li>Regulacja kolorów CMY i wyostrzanie (kilka poziomów).</li>
-                    <li>Wsparcie prostego HDR z trzech ekspozycji (‑2 / 0 / +2 EV).</li>
-                    <li>Wersja testowa: półprzezroczysty watermark na eksportach JPG/TIFF.</li>
+                    <li>Konwersja negatywów DNG do JPG (8‑bit) oraz 16‑bit TIFF z pełną 16‑bitową obróbką (inwersja, korekcje, wyostrzanie).</li>
+                    <li>Automatyczne wykrywanie i usuwanie kolorowej maski filmu (pomarańcz, żółty, niebieski itd.) z ręczną regulacją składowych BLUE/GREEN/RED.</li>
+                    <li>Precyzyjna regulacja ekspozycji, kontrastu (z zachowaniem mediany tonalnej), gęstości/jasności i nasycenia zoptymalizowana pod negatywy.</li>
+                    <li>Auto balans bieli na podstawie środkowego obszaru kadru oraz opcjonalne auto‑crop usuwające czarne/puste brzegi skanu.</li>
+                    <li>Regulacja kolorów CMY (Cyan/Magenta/Yellow) przez bezpośrednią kontrolę kanałów RGB, przydatna do korekcji zafarbów materiału i światła.</li>
+                    <li>Tryb „AI‑cast removal” – automatyczne usuwanie globalnego zafarbienia na podstawie analizy środkowej części obrazu.</li>
+                    <li>Kilka poziomów wyostrzania (Brak, Niskie, Średnie, Wysokie) opartego o maskę wyostrzającą w 16‑bitach.</li>
+                    <li>Ochrona świateł przed zafarbem – wyrównywanie bardzo jasnych partii obrazu, aby uniknąć kolorowych przepaleń.</li>
+                    <li>Automatyczne HDR 16‑bit z trzech plików DNG (‑2 / 0 / +2 EV) z wyrównaniem rozmiaru i prostą fuzją ekspozycji.</li>
+                    <li>System presetów: zapis i odczyt ustawień do/z plików JSON, wygodny przy seryjnej obróbce rolek.</li>
+                    <li>Wersja testowa: półprzezroczysty, powtarzalny watermark „Negative DNG Converter” nakładany na cały kadr (JPG i TIFF).</li>
                 </ul>
             </div>
             <div>
                 <h3>W skrócie</h3>
-                <p>
-                    Program powstał z myślą o wywoływaniu skanów z aparatów cyfrowych (raw &rarr; DNG) fotografujących
-                    negatywy na lightboxie. Sprawdza się przy seryjnej obróbce rolek na Windows.
-                </p>
-                <p>
-                    Interfejs jest w języku polskim, a ustawienia można zapisywać jako presety (JSON)
-                    i odtwarzać w kolejnych sesjach.
-                </p>
+                                  <p>
+                                  Program powstał z myślą o wywoływaniu skanów negatywów z aparatów cyfrowych (raw → DNG) fotografujących film na lightboxie, z naciskiem na zachowanie maksymalnej ilości informacji dzięki pracy w 16 bitach aż do eksportu.    </p>
+                                  <p>
+                                  Świetnie sprawdza się przy seryjnej obróbce rolek na Windows: presety JSON, automatyczne wykrywanie maski, szybki podgląd oraz opcjonalny HDR z 3 ekspozycji przyspieszają powtarzalny workflow.
+    </p>
+                                  <p>
+        Interfejs jest w języku polskim, z czytelnym podziałem na sekcje: podstawowe korekcje, maska/pomarańcz, CMY oraz wyostrzanie, a ustawienia można zapisywać jako presety i odtwarzać w kolejnych sesjach.
+    </p>
+
             </div>
         </div>
     </section>
