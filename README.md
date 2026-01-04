@@ -25,7 +25,8 @@ Linki do pobrania wersji trial i zakupu pełnej wersji znajdziesz na stronie pro
 
 - System: Windows 10 / 11 (64‑bit).
 - RAM: minimum 8 GB, zalecane 16 GB dla dużych plików DNG.
-- Wymagane aktualne sterowniki GPU oraz biblioteki MSVC / .NET, jeśli instalator o to poprosi.
+- Zalecany szybki procesor CPU , przetwarzanie 16-bitowe , podgląd obrazu pracuje na 1/4 rozdzielczości wejściowgo pliku DNG.
+- Monitor Full HD lub o wyższej rozdzielczości , aktualne sterowniki graficzne.
 
 ## Jak używać
 
