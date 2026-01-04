@@ -39,5 +39,4 @@ Linki do pobrania wersji trial i zakupu pełnej wersji znajdziesz na stronie pro
 
 ## Licencja
 
-Kod źródłowy w tym repozytorium służy głównie do prezentacji działania programu i nie jest udostępniany na licencji open‑source.  
 Korzystanie z programu (trial / pełna wersja) regulują osobne pliki EULA dołączone do instalatora (EULA_Trial, EULA_Full).
