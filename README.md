@@ -9,7 +9,7 @@
 - Regulacja ekspozycji, kontrastu, gęstości/jasności i nasycenia, zaprojektowana z myślą o negatywach.
 - Auto balans bieli na podstawie środkowego obszaru kadru oraz opcjonalne auto‑crop (w trakcie rozwoju) usuwające czarne/puste brzegi skanu.
 - Regulacja kolorów CMY (Cyan/Magenta/Yellow) przez bezpośrednią kontrolę kanałów RGB.
-- profile dostosowane do skanowanej kliszy (w trakcie rozwoju).
+- Profile dostosowane do skanowanej kliszy (w trakcie rozwoju).
 - Tryb „AI‑cast removal” – automatyczne usuwanie globalnego zafarbienia.
 - Kilka poziomów wyostrzania (Brak, Niskie, Średnie, Wysokie) z maską wyostrzającą w 16‑bitach i ochroną świateł przed zafarbem.
 - Prosty HDR 16‑bit z trzech plików DNG (‑2 / 0 / +2 EV) z wyrównaniem rozmiaru i fuzją ekspozycji.
